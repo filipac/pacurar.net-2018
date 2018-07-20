@@ -1,0 +1,75 @@
+section.comments {
+  @apply mt-6 mb-24;
+
+  h2 {
+    @apply w-full p-8 bg-red text-white;
+  }
+
+  ol {
+    list-style-type: none;
+  }
+
+  p.akismet_comment_form_privacy_notice {
+    @apply text-white;
+
+    a {
+      @apply text-white;
+    }
+  }
+
+  ol.comment-list {
+    @apply m-0 p-0;
+
+    li {
+      // @apply;
+
+      footer.comment-meta {
+        @apply bg-red flex items-center;
+
+        & * {
+          @apply text-white;
+        }
+
+        .author-details {
+          @apply pl-3;
+
+          .vcard {
+            @apply text-3xl;
+          }
+        }
+      }
+
+      .comment-content {
+        @apply bg-white p-6;
+      }
+
+      .reply {
+        @apply mt-6 mb-6;
+
+        min-height: 30px;
+
+        a {
+          @apply p-6 bg-red text-white;
+        }
+      }
+    }
+
+    li.depth-1 {
+      @apply mt-6;
+    }
+  }
+
+  .comment-respond {
+    @apply bg-white;
+
+    h3 {
+      @apply w-full p-8 bg-red text-white;
+    }
+
+    form {
+      @apply p-8;
+
+      // max-height: 400px;
+    }
+  }
+}

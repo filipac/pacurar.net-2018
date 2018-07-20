@@ -1,0 +1,38 @@
+@tailwind preflight;
+@tailwind components;
+
+/**
+ * Sage’s styles
+ *
+ * Placing these here allows you to use @apply
+ * to apply Tailwind’s utilities
+ */
+@import "common/variables";
+
+/** Import everything from autoload */
+// @import "./autoload/**/*";
+// @import "~some-node-module";
+
+/** Import theme styles */
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/wp-classes";
+@import "components/navigation";
+@import "components/pagenavi";
+@import "components/sidebar";
+@import "font-awesome/scss/font-awesome";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+@import "layouts/search";
+
+@tailwind utilities;
+
+.object-fit-cover {
+  object-fit: cover;
+}

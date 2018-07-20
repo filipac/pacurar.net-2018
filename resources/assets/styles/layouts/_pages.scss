@@ -1,0 +1,57 @@
+/* stylelint-disable */
+.page {
+  main {
+    @apply bg-white -mt-40 relative;
+    @apply pt-1 pl-24 pr-24;
+
+    header {
+      @apply pt-12 pl-24;
+
+      * {
+        @apply antialiased;
+      }
+    }
+
+    .article-content {
+      @apply pt-0 pl-24 pr-24 pb-12;
+
+      .entry-content {
+        @apply .leading-normal .antialiased;
+
+        font-size: 1.85rem; // line-height: 1.5;
+        letter-spacing: 0;
+
+        img + img,
+        a[rel=boxersandswipers] + a[rel=boxersandswipers],
+        figure.gallery-item + figure.gallery-item {
+          img {
+            margin-top: 10px;
+          }
+        }
+
+        p,
+        ul,
+        ol {
+          margin-bottom: 15px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          line-height: normal;
+          clear: both;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+.consultanta-it {
+  h4 {
+    @apply text-4xl font-bold text-red;
+  }
+}

@@ -1,0 +1,33 @@
+.wp-pagenavi {
+  @apply mt-8 mb-8 flex font-medium text-sm;
+
+  span,
+  a {
+    @apply border-none p-4  text-xl;
+  }
+
+  .pages {
+    @apply bg-white;
+  }
+
+  span.current {
+    @apply bg-red text-white;
+  }
+
+  a.page.larger,
+  a.page.smaller,
+  a.nextpostslink,
+  a.previouspostslink,
+  a.last,
+  a.first {
+    @apply bg-white text-black;
+
+    &:hover {
+      @apply bg-red text-white;
+    }
+  }
+
+  .extend {
+    @apply text-white pb-0;
+  }
+}

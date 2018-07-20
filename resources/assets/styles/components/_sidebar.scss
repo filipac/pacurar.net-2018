@@ -1,0 +1,30 @@
+/* stylelint-disable */
+section.widget {
+  @apply bg-white mt-8 main-box-shadow;
+
+  &:nth-of-type(1) {
+    @apply mt-0;
+  }
+
+  h3 {
+    @apply bg-red w-full p-4 text-white uppercase text-3xl;
+  }
+
+  .content {
+    @apply p-8;
+  }
+}
+
+.widget_search {
+  label {
+    @apply min-w-full;
+  }
+
+  input[type='search'] {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight;
+  }
+
+  .search-submit {
+    display:none;
+  }
+}

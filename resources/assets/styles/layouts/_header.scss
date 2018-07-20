@@ -1,0 +1,18 @@
+.navigatie {
+  -webkit-box-shadow: 10px 3px 40px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 3px 40px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 3px 40px -2px rgba(0, 0, 0, 0.75);
+  min-height: 80px;
+}
+
+.menu-item {
+  @apply text-4xl text-white uppercase;
+
+  a {
+    @apply text-white;
+
+    &:hover {
+      @apply no-underline text-white;
+    }
+  }
+}

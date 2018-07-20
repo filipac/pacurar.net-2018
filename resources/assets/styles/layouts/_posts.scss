@@ -1,0 +1,137 @@
+/* stylelint-disable at-rule-no-unknown */
+.single {
+  main {
+    article {
+      @apply bg-white -mt-40;
+
+      header {
+        @apply pt-12 pl-24;
+
+        * {
+          @apply antialiased;
+        }
+      }
+
+      .article-content {
+        @apply pt-0 pl-24 pr-24;
+
+        .entry-content {
+          @apply .leading-normal .antialiased;
+
+          font-size: 1.85rem;
+          // line-height: 1.5;
+          letter-spacing: 0;
+
+          img + img,
+          a[rel=boxersandswipers] + a[rel=boxersandswipers],
+          figure.wp-block-image + figure.wp-block-image,
+          figure.gallery-item + figure.gallery-item {
+            img {
+              margin-top: 10px;
+            }
+          }
+
+          p,
+          ul,
+          ol {
+            margin-bottom: 15px;
+          }
+
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            line-height: normal;
+            clear: both;
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+
+    @screen sm {
+      article {
+        @apply mt-8;
+      }
+    }
+
+    article.has-post-thumbnail {
+      header {
+        @apply -mt-40 text-white pt-12 pl-24;
+
+        .meta-wp *,
+        h1.entry-title {
+          @apply .antialiased;
+
+          color: white !important;
+          text-shadow: 4px 4px 2px rgba(0, 0, 0, 1) !important;
+        }
+
+        h1.entry-title {
+          @apply text-5xl;
+        }
+      }
+
+      @screen sm {
+        header {
+          @apply pl-8 pb-1 -mt-32 pt-0;
+
+          h1.entry-title {
+            @apply text-4xl;
+          }
+        }
+      }
+
+      .article-content {
+        @apply pt-12 py-24;
+      }
+    }
+  }
+}
+
+.main-box-shadow {
+  box-shadow: 5px 17px 43px 0 #000;
+}
+
+.jp-relatedposts-headline {
+  display: none !important;
+}
+
+#jp-relatedposts {
+  padding-top: 0 !important;
+}
+
+.jp-relatedposts-post-title a,
+.jp-relatedposts-post-date,
+.jp-relatedposts-post-context {
+  @apply text-white;
+}
+
+.jp-relatedposts-items {
+  @apply flex justify-between;
+
+  .jp-relatedposts-post {
+    @apply flex flex-col;
+
+    max-width: 33%;
+    float: none !important;
+    width: auto !important;
+    padding-right: 0 !important;
+  }
+}
+
+// @screen sm {
+//   .jp-relatedposts-items {
+//     @apply flex-col items-center;
+//   }
+// }
+
+.jp-relatedposts-post-excerpt {
+  @apply text-white;
+}
+
+#jp-relatedposts .jp-relatedposts-items-visual {
+  margin-right: 0 !important;
+}

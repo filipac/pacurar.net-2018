@@ -1,0 +1,157 @@
+/* stylelint-disable */
+
+// .main{width: 100%; background: #eee;}
+/*General Menu Styling*/
+
+.mainnav {
+  @apply ml-0 p-0 flex .justify-between h-full;
+
+  @screen md {
+    li {
+      @apply text-3xl;
+    }
+  }
+
+  @screen lg {
+    li {
+      @apply text-4p2xl;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+li.menu-item {
+  @apply flex-1 .justify-center;
+  font-size: 100%;
+  a {
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+}
+
+@screen md {
+  li.menu-item a {
+    font-size: 1.5rem;
+  }
+}
+
+@screen lg {
+  li.menu-item a {
+    font-size: 2.3rem;
+  }
+}
+
+li a {
+  text-decoration: none;
+}
+
+.sub-menu {
+  position: absolute;
+  width: 150px;
+  top: 80px;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 22%;
+}
+
+.mainnav li {
+  padding: 5px;
+  border-left: 1px dotted #fff;
+  display: flex;
+  align-items: center;
+  @apply bg-red;
+}
+
+.mainnav li:first-child {
+  border: none;
+}
+
+.mainnav li a {
+}
+
+.mainnav li:hover {
+  background: #fff;
+}
+
+.mainnav li:hover a {
+  color: maroon;
+}
+
+/*First Level*/
+
+.subs {
+  left: -45px;
+  position: relative;
+  top: 35px;
+  min-width: 260px;
+  border-left: none !important;
+  border-bottom: 1px dotted #fff !important;
+}
+
+.subs:last-child {
+  border: none !important;
+}
+
+.menu-item-has-children:hover .sub-menu,
+.menu-item-has-children .menu-item-has-children:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mainnav li:hover ul a,
+.mainnav li:hover ul li ul li a {
+  color: white;
+}
+
+.mainnav li ul li:hover,
+.mainnav li ul li ul li:hover {
+  background: #fff;
+}
+
+.mainnav li ul li:hover a,
+.mainnav li ul li ul li:hover a {
+  color: maroon;
+}
+
+/*Second Level*/
+
+.menu-item-has-children .menu-item-has-children .sub-menu .subs {
+  left: 25px;
+  position: relative;
+  width: 165px;
+  top: 0px;
+}
+
+.menu-item-has-children .menu-item-has-children .sub-menu {
+  z-index: 5;
+  position: absolute;
+  display: flex;
+    flex-direction: column;
+    min-width: 22%;
+  left: 300px;
+  top: 125px;
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-out .35s;
+  -moz-transition: ease-out .35s;
+  -webkit-transition: ease-out .35s;
+}
+
+.sub-menu li {
+  min-width: 380px;
+}
+
+.menu-item {
+  a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}

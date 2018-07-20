@@ -1,0 +1,46 @@
+/* stylelint-disable */
+body.search {
+  .page-header {
+    h1 {
+      @apply text-white;
+    }
+  }
+
+  .nav-links {
+    @apply flex justify-between py-10;
+
+    a {
+      @apply bg-red rounded p-6 text-white;
+    }
+  }
+
+  article {
+    @apply bg-white mt-6 py-4;
+
+    header {
+      @apply pt-2 pl-24 pr-24;
+
+      * {
+        @apply antialiased;
+      }
+
+      h2 {
+        a {
+          @apply text-black;
+
+          &:hover {
+            @apply text-red no-underline;
+          }
+        }
+      }
+    }
+
+    .entry-summary {
+      @apply pt-0 pl-24 pr-24;
+    }
+
+    &:nth-of-type(1) {
+      @apply mt-0;
+    }
+  }
+}

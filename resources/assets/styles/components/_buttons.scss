@@ -1,0 +1,12 @@
+.btn-cta-consultanta {
+  @apply bg-red rounded p-6 text-white;
+
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  &:focus {
+    @apply no-underline bg-red-dark text-white cursor-pointer text-3xl;
+
+    transform: scale(1.1);
+  }
+}
