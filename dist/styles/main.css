@@ -745,6 +745,7 @@ a {
 }
 
 #site-menu {
+  display: none;
   width: 300px;
   height: 100%;
   position: absolute;
@@ -752,6 +753,10 @@ a {
   right: -300px;
   background: #428bca;
   padding: 15px;
+}
+
+.menu-open #site-menu {
+  display: block;
 }
 
 .pacur-sus {
