@@ -28,3 +28,41 @@ section.widget {
     display:none;
   }
 }
+
+aside {
+  .widget_categories {
+    .content {
+      @apply p-0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      @apply w-full min-w-full;
+    }
+
+    ul.children {
+      li a {
+        padding-left: 20px;
+      }
+    }
+
+    li {
+      @apply min-w-full w-full;
+      a {
+        @apply w-full min-w-full p-6 block text-3xl border-b border-black border-dashed text-black font-bold;
+
+        &:hover {
+          @apply bg-red text-white no-underline;
+        }
+      }
+    }
+
+    ul.children {
+      li {
+        a {
+          @apply text-2xl font-normal;
+        }
+      }
+    }
+  }
+}

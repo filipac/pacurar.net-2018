@@ -1215,6 +1215,50 @@ section.widget .content {
   display: none;
 }
 
+aside .widget_categories .content {
+  padding: 0;
+}
+
+aside .widget_categories ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  min-width: 100%;
+}
+
+aside .widget_categories ul.children li a {
+  padding-left: 20px;
+}
+
+aside .widget_categories li {
+  min-width: 100%;
+  width: 100%;
+}
+
+aside .widget_categories li a {
+  width: 100%;
+  min-width: 100%;
+  padding: 1.5rem;
+  display: block;
+  font-size: 1.875rem;
+  border-bottom-width: 1px;
+  border-color: #22292f;
+  border-style: dashed;
+  color: #22292f;
+  font-weight: 700;
+}
+
+aside .widget_categories li a:hover {
+  background-color: #e74c3c;
+  color: #fff;
+  text-decoration: none;
+}
+
+aside .widget_categories ul.children li a {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 /*!
  *  Font Awesome 3.2.1
  *  the iconic font designed for Bootstrap
@@ -3136,6 +3180,13 @@ a .icon-flip-vertical:before {
 
 .content-info {
   margin-top: 1.5rem;
+}
+
+.footer.copy {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #fff;
 }
 
 /* stylelint-disable */

@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-@php $rest = ''; $first = ''; $count = 0; @endphp
+@php global $wp_query; $rest = ''; $first = ''; $count = 0; @endphp
 
 @while (have_posts()) @php the_post() @endphp
         @php ob_start(); @endphp
-        @if($count === 0)
+        @if($count === 0 && $wp_query->found_posts > 1)
         <div class="container mx-auto -mt-32 bg-white max-h-70 border-1 border-grey flex sm:flex-col sm:min-w-full sm:max-h-full sm:mt-8 main-box-shadow">
             @if(has_post_thumbnail())
             <a href="{{ get_the_permalink() }}" class="featured-image flex sm:max-h-sm sm:max-w-full sm:w-full"><img src="{{ the_post_thumbnail_url( 'full' ) }}" class="featured-image  sm:max-w-full sm:w-full"></a>
@@ -27,7 +27,9 @@
         @php $count++ @endphp
       @endwhile
 
+      @if($count > 1)
       {!! $first !!}
+      @endif
   {{-- @while($latest->have_posts()) @php $latest->the_post() @endphp
 
   @endwhile
@@ -41,7 +43,9 @@
     {!! get_search_form(false) !!}
   @endif
 
+  @if(is_home())
   @include('partials.consultanta')
+  @endif
 
   <div class="container mx-auto flex">
       <div class="w-3/4 lg:w-3/4 md:w-full md:min-w-full lg:min-w-0 sm:w-full sm:min-w-full">
