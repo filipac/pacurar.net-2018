@@ -6,6 +6,21 @@
 .mainnav {
   @apply ml-0 p-0 flex .justify-between h-full;
 
+  &.mobile {
+    @apply flex-col .justify-start;
+
+    li.menu-item  {
+      flex: inherit;
+      @apply flex-col;
+
+      ul.sub-menu {
+        position: inherit;
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+
   @screen md {
     li {
       @apply text-3xl;

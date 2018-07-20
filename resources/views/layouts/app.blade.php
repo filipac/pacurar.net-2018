@@ -2,17 +2,11 @@
 <html @php language_attributes() @endphp>
   @include('partials.head')
   <body @php body_class('bg-body') @endphp>
-    <div class="site-canvas md:overflow-hidden lg:overflow-hidden">
+    <div class="site-canvas overflow-hidden">
         <div id="site-menu" class=" md:hidden lg:hidden">
        <a href="#" class="toggle-nav" style="color: pink; font-size: 20px;"><i class="fa fa-times"></i></a>
-       <h2>My Menu</h1>
-       <p class="lead">Put any HTML you want here.</p>
-       <p>Style it however you want.</p>
 
-       <ul>
-         <li>Free to scroll up and down</li>
-         <li>But not left and write</li>
-       </ul>
+{!! wp_nav_menu(['menu' => 'Principal', 'walker' => new \App\Classes\NavWalker, 'items_wrap' => '<div class="mobile-menu"><form><select onchange="if (this.value) window.location.href=this.value">%3$s</select></form></div>']) !!}
      </div>
     @php do_action('get_header') @endphp
     @include('partials.header')
