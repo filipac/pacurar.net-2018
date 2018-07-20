@@ -15,7 +15,7 @@
         <a href="{{ bloginfo('siteurl') }}"><img src="@asset('images/logo_nume.png')" alt="Filip Pacurar"></a>
       </div>
       <div style="" class="navigatie bg-red w-full sm:w-1/4 ml-8 sm:ml-auto sm:flex">
-        <div class='md:hidden sm:block sm:flex sm:flex-col sm:justify-center sm:align-center sm:items-center sm:flex-1 toggle-nav'>
+        <div class='md:hidden sm:block sm:flex sm:flex-col sm:justify-center sm:align-center sm:items-center sm:flex-1 cursor-pointer toggle-nav'>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve" width="50px" height="50px">
               <g>
                 <path d="M28,0C12.561,0,0,12.561,0,28s12.561,28,28,28s28-12.561,28-28S43.439,0,28,0z M28,54C13.663,54,2,42.336,2,28   S13.663,2,28,2s26,11.664,26,26S42.337,54,28,54z" fill="#FFFFFF"></path>
