@@ -9,7 +9,7 @@
   </div>
 </header> --}}
 {{-- <p>test</p> --}}
-<header class="bg-black pb-32 w-full bg-cover min-h-header" style='background-image: url("{{ header_image() }}"); background-position-y: 35%;'>
+<header class="bg-black pb-32 w-full bg-cover min-h-header sm:min-h-header-mobile" style='background-image: url("{{ header_image() }}"); background-position-y: 35%;'>
   <div class="container mx-auto pb-4 flex sm:justify-between sm:pt-4">
       <div style="width: 270px;" class="flex flex-col justify-end">
         <a href="{{ bloginfo('siteurl') }}"><img src="@asset('images/logo_nume.png')" alt="Filip Pacurar"></a>

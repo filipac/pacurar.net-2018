@@ -6884,6 +6884,10 @@ body.search article:nth-of-type(1) {
   min-height: 450px;
 }
 
+.min-h-header-mobile {
+  min-height: 200px;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -12802,6 +12806,10 @@ body.search article:nth-of-type(1) {
     min-height: 450px;
   }
 
+  .sm\:min-h-header-mobile {
+    min-height: 200px;
+  }
+
   .sm\:min-h-full {
     min-height: 100%;
   }
@@ -18698,6 +18706,10 @@ body.search article:nth-of-type(1) {
 
   .md\:min-h-header {
     min-height: 450px;
+  }
+
+  .md\:min-h-header-mobile {
+    min-height: 200px;
   }
 
   .md\:min-h-full {
@@ -24598,6 +24610,10 @@ body.search article:nth-of-type(1) {
     min-height: 450px;
   }
 
+  .lg\:min-h-header-mobile {
+    min-height: 200px;
+  }
+
   .lg\:min-h-full {
     min-height: 100%;
   }
@@ -30494,6 +30510,10 @@ body.search article:nth-of-type(1) {
 
   .xl\:min-h-header {
     min-height: 450px;
+  }
+
+  .xl\:min-h-header-mobile {
+    min-height: 200px;
   }
 
   .xl\:min-h-full {
