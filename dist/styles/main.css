@@ -3413,7 +3413,7 @@ a .icon-flip-vertical:before {
   .single main article.has-post-thumbnail header {
     padding-left: 2rem;
     padding-bottom: .25rem;
-    margin-top: -15rem;
+    margin-top: -12rem;
     padding-top: 0;
   }
 
@@ -6968,6 +6968,10 @@ body.search article:nth-of-type(1) {
   margin: -1px;
 }
 
+.-m-header-mobile {
+  margin: -12rem;
+}
+
 .-my-0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -7126,6 +7130,16 @@ body.search article:nth-of-type(1) {
 .-mx-px {
   margin-left: -1px;
   margin-right: -1px;
+}
+
+.-my-header-mobile {
+  margin-top: -12rem;
+  margin-bottom: -12rem;
+}
+
+.-mx-header-mobile {
+  margin-left: -12rem;
+  margin-right: -12rem;
 }
 
 .-mt-0 {
@@ -7382,6 +7396,22 @@ body.search article:nth-of-type(1) {
 
 .-ml-px {
   margin-left: -1px;
+}
+
+.-mt-header-mobile {
+  margin-top: -12rem;
+}
+
+.-mr-header-mobile {
+  margin-right: -12rem;
+}
+
+.-mb-header-mobile {
+  margin-bottom: -12rem;
+}
+
+.-ml-header-mobile {
+  margin-left: -12rem;
 }
 
 .opacity-0 {
@@ -12890,6 +12920,10 @@ body.search article:nth-of-type(1) {
     margin: -1px;
   }
 
+  .sm\:-m-header-mobile {
+    margin: -12rem;
+  }
+
   .sm\:-my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -13048,6 +13082,16 @@ body.search article:nth-of-type(1) {
   .sm\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .sm\:-my-header-mobile {
+    margin-top: -12rem;
+    margin-bottom: -12rem;
+  }
+
+  .sm\:-mx-header-mobile {
+    margin-left: -12rem;
+    margin-right: -12rem;
   }
 
   .sm\:-mt-0 {
@@ -13304,6 +13348,22 @@ body.search article:nth-of-type(1) {
 
   .sm\:-ml-px {
     margin-left: -1px;
+  }
+
+  .sm\:-mt-header-mobile {
+    margin-top: -12rem;
+  }
+
+  .sm\:-mr-header-mobile {
+    margin-right: -12rem;
+  }
+
+  .sm\:-mb-header-mobile {
+    margin-bottom: -12rem;
+  }
+
+  .sm\:-ml-header-mobile {
+    margin-left: -12rem;
   }
 
   .sm\:opacity-0 {
@@ -18792,6 +18852,10 @@ body.search article:nth-of-type(1) {
     margin: -1px;
   }
 
+  .md\:-m-header-mobile {
+    margin: -12rem;
+  }
+
   .md\:-my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -18950,6 +19014,16 @@ body.search article:nth-of-type(1) {
   .md\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .md\:-my-header-mobile {
+    margin-top: -12rem;
+    margin-bottom: -12rem;
+  }
+
+  .md\:-mx-header-mobile {
+    margin-left: -12rem;
+    margin-right: -12rem;
   }
 
   .md\:-mt-0 {
@@ -19206,6 +19280,22 @@ body.search article:nth-of-type(1) {
 
   .md\:-ml-px {
     margin-left: -1px;
+  }
+
+  .md\:-mt-header-mobile {
+    margin-top: -12rem;
+  }
+
+  .md\:-mr-header-mobile {
+    margin-right: -12rem;
+  }
+
+  .md\:-mb-header-mobile {
+    margin-bottom: -12rem;
+  }
+
+  .md\:-ml-header-mobile {
+    margin-left: -12rem;
   }
 
   .md\:opacity-0 {
@@ -24694,6 +24784,10 @@ body.search article:nth-of-type(1) {
     margin: -1px;
   }
 
+  .lg\:-m-header-mobile {
+    margin: -12rem;
+  }
+
   .lg\:-my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -24852,6 +24946,16 @@ body.search article:nth-of-type(1) {
   .lg\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .lg\:-my-header-mobile {
+    margin-top: -12rem;
+    margin-bottom: -12rem;
+  }
+
+  .lg\:-mx-header-mobile {
+    margin-left: -12rem;
+    margin-right: -12rem;
   }
 
   .lg\:-mt-0 {
@@ -25108,6 +25212,22 @@ body.search article:nth-of-type(1) {
 
   .lg\:-ml-px {
     margin-left: -1px;
+  }
+
+  .lg\:-mt-header-mobile {
+    margin-top: -12rem;
+  }
+
+  .lg\:-mr-header-mobile {
+    margin-right: -12rem;
+  }
+
+  .lg\:-mb-header-mobile {
+    margin-bottom: -12rem;
+  }
+
+  .lg\:-ml-header-mobile {
+    margin-left: -12rem;
   }
 
   .lg\:opacity-0 {
@@ -30596,6 +30716,10 @@ body.search article:nth-of-type(1) {
     margin: -1px;
   }
 
+  .xl\:-m-header-mobile {
+    margin: -12rem;
+  }
+
   .xl\:-my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -30754,6 +30878,16 @@ body.search article:nth-of-type(1) {
   .xl\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .xl\:-my-header-mobile {
+    margin-top: -12rem;
+    margin-bottom: -12rem;
+  }
+
+  .xl\:-mx-header-mobile {
+    margin-left: -12rem;
+    margin-right: -12rem;
   }
 
   .xl\:-mt-0 {
@@ -31010,6 +31144,22 @@ body.search article:nth-of-type(1) {
 
   .xl\:-ml-px {
     margin-left: -1px;
+  }
+
+  .xl\:-mt-header-mobile {
+    margin-top: -12rem;
+  }
+
+  .xl\:-mr-header-mobile {
+    margin-right: -12rem;
+  }
+
+  .xl\:-mb-header-mobile {
+    margin-bottom: -12rem;
+  }
+
+  .xl\:-ml-header-mobile {
+    margin-left: -12rem;
   }
 
   .xl\:opacity-0 {
