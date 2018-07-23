@@ -53,7 +53,7 @@
 @screen sm {
   .page {
     main {
-      @apply pl-2 pr-2;
+      @apply pl-2 pr-2 mt-2;
 
       .page-header {
         @apply w-full min-w-full;

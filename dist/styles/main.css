@@ -3301,6 +3301,7 @@ a .icon-flip-vertical:before {
   .page main {
     padding-left: .5rem;
     padding-right: .5rem;
+    margin-top: .5rem;
   }
 
   .page main .page-header {
