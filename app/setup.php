@@ -14,6 +14,7 @@ add_action(
     'wp_enqueue_scripts', function () {
         $my_theme = wp_get_theme();
         wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, $my_theme->get('Version'));
+        wp_enqueue_style('roboto-font', 'https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i&amp;subset=latin-ext', false, $my_theme->get('Version'));
         wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], $my_theme->get('Version'), true);
         wp_enqueue_script( 'comment-reply' );
     }, 1
