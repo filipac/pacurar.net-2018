@@ -4,6 +4,18 @@ body * {
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  line-height: 1.15;
+}
+
 .featured-image {
   @apply max-w-featured;
 

@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);@charset "UTF-8";
 
+/* stylelint-disable */
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -670,6 +672,18 @@ table {
 
 body * {
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  line-height: 1.15;
 }
 
 .featured-image {
