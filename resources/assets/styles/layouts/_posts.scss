@@ -84,7 +84,7 @@
 
       @screen sm {
         header {
-          @apply pl-8 pb-1 -mt-32 pt-0;
+          @apply pl-8 pb-1 -mt-header-mobile pt-0;
 
           h1.entry-title {
             @apply text-4xl;
