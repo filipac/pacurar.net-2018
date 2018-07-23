@@ -54,6 +54,14 @@
     @screen sm {
       article {
         @apply mt-8;
+
+        header {
+          @apply pl-2;
+        }
+
+        .article-content {
+          @apply pl-2 pr-2;
+        }
       }
     }
 

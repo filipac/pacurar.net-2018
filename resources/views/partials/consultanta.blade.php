@@ -1,8 +1,8 @@
 <div class="container mx-auto flex">
-    <div class="w-full bg-wild-sand mt-6 flex p-10">
+    <div class="w-full bg-wild-sand mt-6 flex p-10 sm:flex-col-reverse sm:content-center sm:justify-center sm:p-2">
 
-      <div class="flex-1 p-8">
-        <h3 class='uppercase'>Psst! Stiai ca sunt consultant IT?</h3>
+      <div class="flex-1 p-8 sm:p-4 sm:text-2xl">
+        <h3 class='uppercase sm:text-3xl sm:font-bold sm:tracking-tight'>Psst! Stiai ca sunt consultant IT?</h3>
         <p class="mt-4">Iarta-ma ca te intrerup, probabil nu esti aici pentru reclama, dar poate nu stiai ca imi castig banii din consultanta IT!
 
           Lucrez full time cu o super agentie din Canada dar, hey, de asemenea ne construim casa noastra la 25 de ani, asa ca fiecare ban e binevenit
@@ -36,7 +36,7 @@
         </p>
       </div>
 
-<svg width="100px" height="350px" class="fill-current" viewBox="0 0 86 276" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="100px" height="350px" class="fill-current sm:mx-auto" viewBox="0 0 86 276" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
 <desc>Created with Sketch.</desc>
 <defs></defs>

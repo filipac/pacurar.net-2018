@@ -1,3 +1,4 @@
+/* stylelint-disable */
 .wp-pagenavi {
   @apply mt-8 mb-8 flex font-medium text-sm;
 
@@ -29,5 +30,18 @@
 
   .extend {
     @apply text-white pb-0;
+  }
+}
+
+@screen sm {
+  .wp-pagenavi {
+    span.extend {
+      display:none;
+    }
+
+    span.pages,
+    a.last {
+      min-width: 120px;
+    }
   }
 }

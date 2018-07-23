@@ -1145,6 +1145,8 @@ li a {
   height: 100%;
 }
 
+/* stylelint-disable */
+
 .wp-pagenavi {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1194,6 +1196,17 @@ li a {
 .wp-pagenavi .extend {
   color: #fff;
   padding-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .wp-pagenavi span.extend {
+    display: none;
+  }
+
+  .wp-pagenavi span.pages,
+  .wp-pagenavi a.last {
+    min-width: 120px;
+  }
 }
 
 /* stylelint-disable */
@@ -3221,6 +3234,10 @@ a .icon-flip-vertical:before {
   color: #fff;
 }
 
+.jr-insta-thumb ul li {
+  padding: 2px !important;
+}
+
 /* stylelint-disable */
 
 .page main {
@@ -3278,6 +3295,23 @@ a .icon-flip-vertical:before {
   line-height: normal;
   clear: both;
   margin: 10px 0;
+}
+
+@media (max-width: 767px) {
+  .page main {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .page main .page-header {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .page main .article-content {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
 }
 
 .consultanta-it h4 {
@@ -3344,6 +3378,15 @@ a .icon-flip-vertical:before {
 @media (max-width: 767px) {
   .single main article {
     margin-top: 2rem;
+  }
+
+  .single main article header {
+    padding-left: .5rem;
+  }
+
+  .single main article .article-content {
+    padding-left: .5rem;
+    padding-right: .5rem;
   }
 }
 

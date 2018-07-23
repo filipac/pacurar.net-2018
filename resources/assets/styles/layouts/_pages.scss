@@ -50,6 +50,22 @@
   }
 }
 
+@screen sm {
+  .page {
+    main {
+      @apply pl-2 pr-2;
+
+      .page-header {
+        @apply w-full min-w-full;
+      }
+
+      .article-content {
+        @apply px-2;
+      }
+    }
+  }
+}
+
 .consultanta-it {
   h4 {
     @apply text-4xl font-bold text-red;
