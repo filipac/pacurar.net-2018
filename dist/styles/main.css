@@ -3405,6 +3405,10 @@ a .icon-flip-vertical:before {
   }
 }
 
+.single main article.has-post-thumbnail ins.adsbygoogle {
+  margin-top: 5px;
+}
+
 .single main article.has-post-thumbnail header {
   margin-top: -15rem;
   color: #fff;
