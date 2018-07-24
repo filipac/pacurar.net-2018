@@ -751,6 +751,7 @@ module.exports = {
     '32': '8rem',
     'header-mobile': '12rem',
     '40': '15rem',
+    '50': '30rem',
   },
 
 
