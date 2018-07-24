@@ -56,7 +56,7 @@
               </g>
               </svg>
         </div>
-        {!! wp_nav_menu(['menu' => 'Principal', 'menu_class' => 'mainnav sm:hidden', 'container' => false]) !!}
+        {!! wp_nav_menu(['menu' => 'Principal', 'menu_class' => 'mainnav flex-1 sm:hidden', 'container' => false]) !!}
         {{-- <ul class="mainnav">
             <li class='menu-item'><a href="#">Home</a></li>
             <li class='menu-item'><a href="#">About</a></li>

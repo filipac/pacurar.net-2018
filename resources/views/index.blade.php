@@ -6,7 +6,7 @@
 @while (have_posts()) @php the_post() @endphp
         @php ob_start(); @endphp
         @if($count === 0 && $wp_query->found_posts > 1)
-        <div class="container mx-auto -mt-32 bg-white max-h-70 border-1 border-grey flex sm:flex-col sm:min-w-full sm:max-h-full sm:mt-8 main-box-shadow">
+        <div class="container mx-auto -mt-32 bg-white max-h-70 border-1 border-grey flex flex-1 sm:flex-col sm:min-w-full sm:max-h-full sm:mt-8 main-box-shadow">
             @if(has_post_thumbnail())
             <a href="{{ get_the_permalink() }}" class="featured-image flex sm:max-h-sm sm:max-w-full sm:w-full"><img src="{{ the_post_thumbnail_url( 'full' ) }}" class="featured-image  sm:max-w-full sm:w-full"></a>
           @endif
