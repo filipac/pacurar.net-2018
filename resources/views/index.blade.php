@@ -10,7 +10,7 @@
             @if(has_post_thumbnail())
             <a href="{{ get_the_permalink() }}" class="featured-image flex sm:max-h-sm sm:max-w-full sm:w-full"><img src="{{ the_post_thumbnail_url( 'full' ) }}" class="featured-image  sm:max-w-full sm:w-full"></a>
           @endif
-            <div class='flex flex-col antialiased'>
+            <div class='flex flex-1 flex-col antialiased'>
                 <div class='pt-12 pl-6'>
                     @include('partials/entry-meta')
                   <h2 class='text-5xl'><a href="{{ get_the_permalink() }}" class="text-black hover:text-black focus:text-black focus:no-underline hover:no-underline">{!! the_title() !!}</a></h2>
