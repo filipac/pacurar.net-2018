@@ -1,7 +1,7 @@
 <article @php post_class('bg-white mt-12 flex flex-col') @endphp>
   @if(has_post_thumbnail())
     <div class="overflow-hidden">
-      <a href="{{ get_the_permalink() }}"><img src="{{ the_post_thumbnail_url( 'full' ) }}" alt="" style="object-fit:cover;"></a>
+      <a href="{{ get_the_permalink() }}"><img src="{{ the_post_thumbnail_url( 'full' ) }}" alt="" style="object-fit:cover;" class="w-full"></a>
     </div>
   @endif
   <div class="p-10">
