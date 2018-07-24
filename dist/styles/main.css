@@ -3437,6 +3437,10 @@ a .icon-flip-vertical:before {
   }
 }
 
+.single main article.has-post-thumbnail header.longer {
+  margin-top: -30rem;
+}
+
 .single main article.has-post-thumbnail .article-content {
   padding-top: 3rem;
   padding-top: 6rem;

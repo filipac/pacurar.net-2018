@@ -92,6 +92,10 @@
         }
       }
 
+      header.longer {
+        @apply -mt-50;
+      }
+
       .article-content {
         @apply pt-12 py-24;
       }
