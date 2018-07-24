@@ -4,7 +4,7 @@
       <img src="{{ the_post_thumbnail_url( 'full' ) }}" class="min-w-full object-fit-cover">
     </a>
   @endif
-  <header class="@if(strlen(get_the_title()) > 75)longer @endif">
+  <header class="@if(strlen(get_the_title()) > 110)longer @endif">
     @include('partials/entry-meta')
     <h1 class="entry-title">{!! get_the_title() !!}</h1>
   </header>
