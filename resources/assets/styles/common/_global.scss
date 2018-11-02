@@ -1,3 +1,4 @@
+/* stylelint-disable */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body * {
@@ -19,6 +20,11 @@ html {
 .featured-image {
   @apply max-w-featured;
 
+  object-fit: cover;
+}
+
+.podcast-image {
+  max-width: 20rem;
   object-fit: cover;
 }
 
@@ -50,6 +56,23 @@ a {
     &:hover {
       @apply text-red .no-underline;
     }
+  }
+}
+
+@screen md {
+  .podcast-image {
+    max-width: 28rem;
+  }
+  .podcast-div {
+    max-height: 280px;
+  }
+}
+@screen lg {
+  .podcast-image {
+    max-width: 28rem;
+  }
+  .podcast-div {
+    max-height: 280px;
   }
 }
 
