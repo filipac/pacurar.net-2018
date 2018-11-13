@@ -67,11 +67,11 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   @include('partials.consultanta')
   @endif
 
-  <div class="container mx-auto flex">
+  <div class="container mx-auto flex sm:flex-col md:flex-col lg:flex-row">
       <div class="w-3/4 lg:w-3/4 md:w-full md:min-w-full lg:min-w-0 sm:w-full sm:min-w-full">
         {!! $rest !!}
       </div>
-      <div class="w-1/4 lg:w-1/4 pl-8 mt-12 sm:w-full sm:max-w-full flex-1">
+      <div class="w-1/4 lg:w-1/4 pl-8 lg:pl-8 mt-12 sm:w-full sm:max-w-full md:w-full md:max-w-full flex-1 sm:pl-0 md:pl-0">
           @php if ( is_active_sidebar( 'sidebar-primary' ) ) : @endphp
 
           <aside class="main-sidebar">
@@ -83,7 +83,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   </div>
 
   <div class="container pagination-container flex">
-    <div class="w-full">
+    <div class="w-full sm:pl-10">
       {!! wp_pagenavi() !!}
     </div>
   </div>
