@@ -34,7 +34,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     <div id="putiframehere">
 
                     </div>
-                    @if(if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false))
+                    @if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false)
                     <script>
                     jQuery(document).load(function() {
                       jQuery('#putiframehere').html('<iframe src="https://anchor.fm/cudetoate/embed" height="102px" width="325px" frameborder="0" scrolling="no"></iframe>');
