@@ -31,9 +31,14 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     <a href="https://anchor.fm/cudetoate" target="_blank"><h1 class="text-white">Cu de toate - Podcast-ul nostru</h1></a>
                     <div class="text-grey text-base ml-1">By Filip si Catalina Pacurar</div>
                     <div class="text-white ml-1 mt-4">Cu de toate... exact ca o shaorma! Podcastul unui programator in care voi vorbi despre orice imi trece prin minte! Absolut orice... deci nu doare de programare :D</div>
-                    <div>
-                        <iframe src="https://anchor.fm/cudetoate/embed" height="102px" width="325px" frameborder="0" scrolling="no"></iframe>
+                    <div id="putiframehere">
+
                     </div>
+                    <script>
+                    jQuery(document).load(function() {
+                      $('#putiframehere').html('<iframe src="https://anchor.fm/cudetoate/embed" height="102px" width="325px" frameborder="0" scrolling="no"></iframe>');
+                    })
+                    </script>
                     <div class="mt-2 flex flex-row">
                         <div><a href="https://anchor.fm/cudetoate" target="_blank"><img src="@asset('images/anchor.png')" style="width: 200px" alt=""></a></div>
                         <div class="ml-2"><a href="https://open.spotify.com/show/7ykNr0Vn7ffsmCY8hMRm0b?si=AS9X_MOHSSmgv6N9dKW0dQ" target="_blank"><img src="@asset('images/spotify.png')" style="width: 200px" alt=""></a></div>
