@@ -34,11 +34,13 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     <div id="putiframehere">
 
                     </div>
+                    @if(if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false))
                     <script>
                     jQuery(document).load(function() {
                       jQuery('#putiframehere').html('<iframe src="https://anchor.fm/cudetoate/embed" height="102px" width="325px" frameborder="0" scrolling="no"></iframe>');
                     })
                     </script>
+                    @endif
                     <div class="mt-2 flex flex-row">
                         <div><a href="https://anchor.fm/cudetoate" target="_blank"><img src="@asset('images/anchor.png')" style="width: 200px" alt=""></a></div>
                         <div class="ml-2"><a href="https://open.spotify.com/show/7ykNr0Vn7ffsmCY8hMRm0b?si=AS9X_MOHSSmgv6N9dKW0dQ" target="_blank"><img src="@asset('images/spotify.png')" style="width: 200px" alt=""></a></div>
