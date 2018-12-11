@@ -36,7 +36,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     </div>
                     <script>
                     jQuery(document).load(function() {
-                      $('#putiframehere').html('<iframe src="https://anchor.fm/cudetoate/embed" height="102px" width="325px" frameborder="0" scrolling="no"></iframe>');
+                      jQuery('#putiframehere').html('<iframe src="https://anchor.fm/cudetoate/embed" height="102px" width="325px" frameborder="0" scrolling="no"></iframe>');
                     })
                     </script>
                     <div class="mt-2 flex flex-row">
