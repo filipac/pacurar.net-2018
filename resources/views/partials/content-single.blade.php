@@ -1,4 +1,4 @@
-<article @php post_class() @endphp>
+<article @php post_class($hide_big_image ? 'hide-post-thumb' : '') @endphp>
   @if(has_post_thumbnail() && !$hide_big_image)
     <a href="{{ get_the_permalink() }}" class="flex sm:max-w-full sm:w-full items-start">
       <img src="{{ the_post_thumbnail_url( 'full' ) }}" class="min-w-full object-fit-cover">

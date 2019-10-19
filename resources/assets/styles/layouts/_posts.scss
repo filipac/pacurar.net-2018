@@ -65,7 +65,7 @@
       }
     }
 
-    article.has-post-thumbnail {
+    article.has-post-thumbnail:not(.hide-post-thumb) {
       ins.adsbygoogle {
         margin-top: 5px;
       }
